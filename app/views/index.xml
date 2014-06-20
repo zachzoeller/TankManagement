@@ -1,0 +1,12 @@
+<Alloy>
+    <Window class="container" layout="vertical">         
+        <Label id="title">Tank Management</Label>
+        <TextField id="tankNumber" hintText="Tank Number" height="40" width="Ti.UI.FILL" onReturn="closeKeyboard"></TextField>
+        <TextField id="fromLocation" hintText="From Location" height="40" width="Ti.UI.FILL" onReturn="closeKeyboard"></TextField>
+        <TextField id="toLocation" hintText="To Location" height="40" width="Ti.UI.FILL" onReturn="closeKeyboard"></TextField>
+        <TextField id="customer" hintText="Customer" height="40" width="Ti.UI.FILL" onReturn="closeKeyboard"></TextField>
+        <Label>Charge For Pickup</Label><Switch id="chargeForPickup" value="false"/>
+        <Label>Charge For Delivery</Label><Switch id="chargeForDelivery" value="false"/>
+        <Button id="sendButton"  onClick="sendClicked" />
+    </Window>
+</Alloy>
